@@ -4,24 +4,24 @@ import styles from './styles';
 import PropTypes from 'prop-types';
 
 class LoginView extends Component {
-    navigate = () => {
-        this.props.onLogin('username', 'password');
-    };
+  navigate = () => {
+    this.props.onLogin('username', 'password');
+  };
 
-    render() {
-        return (
-            <View style={styles.container}>
-                <Text>Login</Text>
-                <TouchableOpacity onPress={this.navigate}>
-                    <Text>Go to Home</Text>
-                </TouchableOpacity>
-            </View>
-        );
-    }
+  render() {
+    return (
+      <View style={styles.container}>
+        <Text>Login</Text>
+        <TouchableOpacity onPress={this.navigate}>
+          <Text>Go To Home</Text>
+        </TouchableOpacity>
+      </View>
+    );
+  }
 }
 
 LoginView.propTypes = {
-    onLogin: PropTypes.func
+  onLogin: PropTypes.func
 };
 
 export default LoginView;

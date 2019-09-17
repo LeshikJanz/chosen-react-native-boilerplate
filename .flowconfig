@@ -63,5 +63,9 @@ suppress_comment=\\(.\\|\n\\)*\\$FlowIssue\\((\\(<VERSION>\\)? *\\(site=[a-z,_]*
 suppress_comment=\\(.\\|\n\\)*\\$FlowFixedInNextDeploy
 suppress_comment=\\(.\\|\n\\)*\\$FlowExpectedError
 
+[untyped]
+.*/node_modules/react-native
+.*/node_modules/redux-persist
+
 [version]
-^0.75.0
+^0.108.0
