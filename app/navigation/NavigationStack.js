@@ -2,8 +2,8 @@
 
 import { createStackNavigator, createAppContainer } from 'react-navigation';
 
-import Login from 'app/screens/Login';
-import Home from 'app/screens/Home';
+import Login from 'app/modules/Login';
+import Home from 'app/modules/Home';
 
 const RNApp = createStackNavigator(
   {
